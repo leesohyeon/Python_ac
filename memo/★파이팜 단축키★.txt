@@ -1,0 +1,26 @@
+#파이참 단축키
+
+1. 폴더, 새파일 생성 : alt + insert
+
+2. 복제 : ctrl + d (shift로 이동)
+
+3. 삭제 : ctrl + y
+
+4. 실행취소(undo) : ctrl + z
+   실행 취소 한걸 재실행 (redo) : ctrl + shift + z
+
+5. 편집창 닫기 : ctrl + f4
+   파이참 종료 : alt + f4
+
+6. 실행하기(run)
+	1) 파일 선택해서 run : alt + shift +f10
+	2) 현재파일 run : ctrl + shift + f10
+	3) 재실행 run : shift + f10
+
+7. 화면 이동 : ctrl + tap (ctrl 키 누른채로 방향키)
+
+8.  파일 , 폴더 이름 변경 : shift + f6
+
+9. ()소괄호 밖 탈출 : ctrl + shift + enter
+
+10. 주석처리 및 해제 : ctrl + / (영역 지정후)

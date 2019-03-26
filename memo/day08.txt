@@ -1,0 +1,98 @@
+* 8day
+
+  1. 숫자, 문자(열), 리스트, 튜플, 딕셔너리, 셋
+
+  2. 딕셔너리(dictionary)
+	1) key와 value로 구성된다
+
+	2) key값은 고유한 값이므로 중복을 허용하지 X
+	   만약 중복을 지정하게 된다면, 하나만 적용되고 나머지는 제외된다.
+
+	3) 리스트 mutable
+	   튜플 immutable
+
+	4) 변수명 = {key1:value1, key2:value2 ...}
+
+  3. 셋(set)
+	1) set 키워드
+	2) 중복을 허용하지 않는다.
+	3) 순서가 없다. indexing
+
+
+  4. 파일 입출력 (input output =>10
+	1) 파일 생성하기 : open("파일이름","파일 열기모드")
+
+	2) 파일 열기 모드
+		r : 읽기모드(read)
+		w : 쓰기모드(write)
+			-파일이 존재하지 않을 경우, 새로운 파일 생성
+			-파일이 존재하는 경우, 기존내용을 지우고 새로 생성
+		a : 추가모드(append)
+
+	3)절대경로 :C:\0200_10_python_lsh\memo\★파이팜 단축키★.txt 
+		   : 
+	  상대경로 : 나를 기준으로 생성
+ 
+  5.예외처리 
+	1)예외처리란? 
+		프로그래밍에서 벌어지는 "예외적인"상황을 의미한다.
+
+	2)에러의 예
+	  IOError		:파일을 오픈할 수 없을때
+	  IndexError		:인덱스 값을 잘못입력했을 때 발생
+	  ImportError		:지정한 모듈을 찾을 수 없을 때 발생
+	  ValueError		:값이 적절하지 않으면 발생
+	  ZeroDivisionError	:나눗셈을 하면서 분보가 0일 때 발생
+	  FileNotFoundError	:파일이 없을때
+	  SyntaxError		:구문 오류(오타)
+	  EOFError		:'End Of File' 더이상 읽어 올 내용이 없을 때 발생
+
+	3)형식
+	  
+	  try:
+	     에러발생코드
+	  except:
+	     에러 발생 후 처리할 내용
+	-------------------------------
+	  try :
+	     ...
+	  except 발생에러:
+	     ...
+	---------------------------------
+	  try:
+	    ...
+	  except 발생에러 as 에러메세지 변수
+	    ...
+
+  6.GUI(Graphic User Interface)
+	1)컨테이너
+
+	2)컴포넌트
+
+	3)이벤트
+
+	4)이벤트 핸들러
+
+	5)레이아웃
+
+  7.배치관리자 3가지 
+	1) 종류
+	#pack : 상하좌우로 배치
+	#grid : 행과 열로 배치
+	#place : 좌표 지정해서 배치
+
+	2)pack관리자(기본)
+	#side	: 배치하기 위한 시작위치를 설정
+		   TOP / LEFT / RIGHT / BOTTOM
+	#fill	: 창에 꽉차게 표시
+		    X / Y / BOTH
+	#expand	: 창의 크기가 변하면 컴포넌트도 비율대로 변함
+		    YES / NO
+	#padx	: 좌우여백 지정
+	#pady   : 상하여백 지정
+
+	3)grid관리자
+	# row	      : 행번호
+	# column      : 열번호
+	# rowspan     : 행의 개수
+	# columnspan  : 열의 개수
